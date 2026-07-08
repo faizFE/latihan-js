@@ -45,17 +45,19 @@
                 msgAlert = 'masukkan username'
             } else if (passwordInput.value === ''){
                 msgAlert = 'masukkan password'
-            } else if (usernameInput.value === username && passwordInput.value === password) {
-                msgAlert = 'Berhasil Masuk'
             } else if (usernameInput.value !== username && passwordInput.value !== password) {
                 msgAlert = 'username dan password salah'
             } else if (usernameInput.value !== username) {
                 msgAlert = 'username salah'
             } else if (passwordInput.value !== password) {
                 msgAlert = 'password salah'
+            } else {
+                window.location.href = 'testing.html'; 
+                msgAlert = 'Berhasil Masuk'
             }
             alert(msgAlert);
         })
+
     </script>
 </body>
 
